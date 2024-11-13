@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* กรอบข้างซ้ายและขวา */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* กรอบด้านข้าง */
+.side-frame {
+    background-color: #ffcc66;
+    width: 5%;
+    min-height: 100vh;
+}
+
+/* ส่วนเนื้อหา */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc66;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #d2691e;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* สไตล์การ์ดสูตรอาหาร */
+.recipe-card {
+    background-color: #c5a9a9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+    padding: 15px; /* เพิ่ม padding ภายในการ์ด */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.recipe-content {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.recipe h2 {
+    color: #ff6a00;
+    margin-bottom: 10px;
+}
+
+.recipe ul, .recipe ol {
+    margin: 10px 0 20px 20px;
+}
+
+.recipe li {
+    margin-bottom: 8px;
+}
+
+.recipe h3 {
+    margin-top: 20px;
+    color: #666;
+}
